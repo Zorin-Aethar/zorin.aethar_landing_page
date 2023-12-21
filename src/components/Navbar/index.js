@@ -33,10 +33,18 @@ function Dropdown({ setOpen }) {
         <AiOutlineClose color="#fff" size={40} onClick={() => setOpen(false)} />
       </div>
       <ul className="flex flex-col justify-center items-center gap-x-5 text-2xl gap-y-5">
-        <li>FAQ</li>
-        <li>Case Studies</li>
-        <li>Why Us</li>
-        <li>Testimonials</li>
+        <li>
+          <a href="">FAQ</a>
+        </li>
+        <li>
+          <a href="">Case Studies</a>
+        </li>
+        <li>
+          <a href="">Why Us</a>
+        </li>
+        <li>
+          <a href="">Testimonials</a>
+        </li>
       </ul>
     </motion.div>
   );
@@ -47,7 +55,7 @@ export default function Navbar() {
 
   return (
     <>
-      <nav className="hidden justify-evenly items-center py-5 px-16 w-full border-b-[0.3px] lg:flex">
+      <nav className="hidden justify-evenly items-center py-5 px-16 w-full border-b-[0.3px] border-[#FFF3F3] lg:flex">
         <Image
           src="/zorin_logo.png"
           width={178}
@@ -55,14 +63,22 @@ export default function Navbar() {
           alt="Zorin.Aethar Logo"
         />
         <ul className="flex justify-center items-center gap-x-5 text-lg">
-          <li>FAQ</li>
-          <li>Case Studies</li>
-          <li>Why Us</li>
-          <li>Testimonials</li>
+          <li>
+            <a href="">FAQ</a>
+          </li>
+          <li>
+            <a href="">Case Studies</a>
+          </li>
+          <li>
+            <a href="">Why Us</a>
+          </li>
+          <li>
+            <a href="">Testimonials</a>
+          </li>
         </ul>
         <LetsTalk />
       </nav>
-      <nav className="flex justify-between items-center lg:hidden p-5 border-b-[0.3px] relative">
+      <nav className="flex justify-between items-center lg:hidden p-5 border-b-[0.3px] border-[#FFF3F3] relative">
         <AnimatePresence
           initial={false}
           node="wait"
