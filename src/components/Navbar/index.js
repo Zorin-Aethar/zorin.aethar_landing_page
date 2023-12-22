@@ -51,11 +51,11 @@ function Dropdown({ setOpen }) {
 }
 
 export default function Navbar() {
-  const [open, setOpen] = useState(true);
+  const [open, setOpen] = useState(false);
 
   return (
     <>
-      <nav className="hidden justify-evenly items-center py-5 px-16 w-full border-b-[0.3px] border-[#FFF3F3] lg:flex">
+      <nav className="hidden justify-between items-center py-5 px-10 w-full border-b-[0.3px] border-[#FFF3F3] lg:flex">
         <Image
           src="/zorin_logo.png"
           width={178}
