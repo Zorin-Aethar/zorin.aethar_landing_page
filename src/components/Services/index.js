@@ -58,25 +58,26 @@ export default function Services() {
             projects.
           </p>
         </div>
-        <div className="flex flex-wrap justify-between gap-10">
-          {data.map((card, index) => {
-            return (
-              <div
-                className="rounded-2xl border border-solid border-white border-opacity-40 bg-gradient-to-b from-opacity-4 via-opacity-1 via-opacity-0 to-transparent shadow-lg backdrop-blur-20 w-[420px] h-[355px] flex flex-col justify-between p-3"
-                key={index}
-              >
-                <div className="w-[80px] h-[80px] rounded-2xl border border-solid border-white border-opacity-40 bg-gradient-to-b from-opacity-4 via-opacity-1 via-opacity-0 to-transparent shadow-md backdrop-blur-20 flex justify-center items-center">
-                  <Image src={card.imageUrl} height={65} width={65} />
-                </div>
-                <div>
-                  <h4 className="text-[1.8rem] font-semibold">{card.heading}</h4>
-                  <p className="font-thin text-xl">{card.text}</p>
-                </div>
-                <Image src="/icons/arrow-right.svg" height={65} width={65} />
+      </div>
+
+      <div className="flex flex-wrap justify-between gap-10 w-full mt-10">
+        {data.map((card, index) => {
+          return (
+            <div
+              className="rounded-2xl border border-solid border-white border-opacity-40 bg-gradient-to-b from-opacity-4 via-opacity-1 via-opacity-0 to-transparent shadow-lg backdrop-blur-20 lg:w-[420px] md:w-full h-[355px] flex flex-col justify-between p-3 hover:scale-105 duration-500 hover:cursor-pointer"
+              key={index}
+            >
+              <div className="w-[80px] h-[80px] rounded-2xl border border-solid border-white border-opacity-40 bg-gradient-to-b from-opacity-4 via-opacity-1 via-opacity-0 to-transparent shadow-md backdrop-blur-20 flex justify-center items-center">
+                <Image src={card.imageUrl} height={65} width={65} />
               </div>
-            );
-          })}
-        </div>
+              <div>
+                <h4 className="text-[1.8rem] font-semibold">{card.heading}</h4>
+                <p className="font-thin text-xl">{card.text}</p>
+              </div>
+              <Image src="/icons/arrow-right.svg" height={65} width={65} />
+            </div>
+          );
+        })}
       </div>
     </div>
   );
