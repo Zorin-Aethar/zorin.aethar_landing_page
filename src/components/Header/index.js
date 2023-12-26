@@ -67,7 +67,7 @@ export default function Header() {
             className="inline-flex items-center justify-center border-[#00C4EE] border px-6 py-3 text-[#00C4EE] rounded-md ring-[#00C4EE]"
           >
             View Work{" "}
-            <Image src="/icons/arrow-up-right.svg" width={30} height={30} />{" "}
+            <Image src="/icons/arrow-up-right.svg" width={30} height={30} alt="arrow-up-right icon" />{" "}
           </a>
         </div>
         <div className="flex justify-center items-center gap-x-4 sm:ml-0 ml-3">

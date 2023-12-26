@@ -68,13 +68,13 @@ export default function Services() {
               key={index}
             >
               <div className="w-[80px] h-[80px] rounded-2xl border border-solid border-white border-opacity-40 bg-gradient-to-b from-opacity-4 via-opacity-1 via-opacity-0 to-transparent shadow-md backdrop-blur-20 flex justify-center items-center">
-                <Image src={card.imageUrl} height={65} width={65} />
+                <Image src={card.imageUrl} height={65} width={65} alt={card.heading} />
               </div>
               <div>
                 <h4 className="text-[1.8rem] font-semibold">{card.heading}</h4>
                 <p className="font-thin text-xl">{card.text}</p>
               </div>
-              <Image src="/icons/arrow-right.svg" height={65} width={65} />
+              <Image src="/icons/arrow-right.svg" height={65} width={65} alt="arrow-right icon" />
             </div>
           );
         })}

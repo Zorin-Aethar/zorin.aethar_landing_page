@@ -44,6 +44,7 @@ export default function Portfolio() {
                 width={420}
                 height={355}
                 className="lg:w-[420px] md:w-full h-[355px] hover:cursor-pointer hover:scale-105 duration-700 object-cover rounded-3xl"
+                alt="portfolio stock images"
               />
             );
           })}

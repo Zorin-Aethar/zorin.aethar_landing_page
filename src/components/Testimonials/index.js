@@ -51,6 +51,7 @@ export default function Testimonials() {
             width={75}
             height={75}
             className="rounded-full"
+            alt="avatar image"
           />
           <p className="font-semibold text-2xl">{data.name}</p>
           <p className="font-light">{data.bio}</p>

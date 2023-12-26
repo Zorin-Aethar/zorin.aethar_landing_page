@@ -55,7 +55,6 @@ export default function Pricing() {
               className="rounded-2xl border border-solid border-white border-opacity-40 bg-gradient-to-b from-opacity-4 via-opacity-1 via-opacity-0 to-transparent shadow-lg backdrop-blur-20 lg:w-[420px] md:w-full h-fit p-5 flex flex-col gap-y-5 items-start justify-start"
               key={index}
             >
-              
               <div className="flex flex-col gap-y-4">
                 <h3 className="text-[#F5F5F5]/70 text-4xl font-extralight">
                   {price.package}
@@ -65,27 +64,63 @@ export default function Pricing() {
               </div>
               <ul className="flex flex-col gap-y-5">
                 <li className="inline-flex items-center justify-start gap-x-3">
-                  <Image width={15} height={15} src="/icons/tick-circle.svg" />
+                  <Image
+                    width={15}
+                    height={15}
+                    src="/icons/tick-circle.svg"
+                    alt="
+                  tick-circle-icon"
+                  />
                   Functional Website
                 </li>
                 <li className="inline-flex items-center justify-start gap-x-3">
-                  <Image width={15} height={15} src="/icons/tick-circle.svg" />
+                  <Image
+                    width={15}
+                    height={15}
+                    src="/icons/tick-circle.svg"
+                    alt="
+                  tick-circle-icon"
+                  />
                   Responsive Design
                 </li>
                 <li className="inline-flex items-center justify-start gap-x-3">
-                  <Image width={15} height={15} src="/icons/tick-circle.svg" />
+                  <Image
+                    width={15}
+                    height={15}
+                    src="/icons/tick-circle.svg"
+                    alt="
+                  tick-circle-icon"
+                  />
                   Content Upload
                 </li>
                 <li className="inline-flex items-center justify-start gap-x-3">
-                  <Image width={15} height={15} src="/icons/tick-circle.svg" />
+                  <Image
+                    width={15}
+                    height={15}
+                    src="/icons/tick-circle.svg"
+                    alt="
+                  tick-circle-icon"
+                  />
                   Functional Website
                 </li>
                 <li className="inline-flex items-center justify-start gap-x-3">
-                  <Image width={15} height={15} src="/icons/tick-circle.svg" />
+                  <Image
+                    width={15}
+                    height={15}
+                    src="/icons/tick-circle.svg"
+                    alt="
+                  tick-circle-icon"
+                  />
                   Functional Website
                 </li>
                 <li className="inline-flex items-center justify-start gap-x-3">
-                  <Image width={15} height={15} src="/icons/tick-circle.svg" />
+                  <Image
+                    width={15}
+                    height={15}
+                    src="/icons/tick-circle.svg"
+                    alt="
+                  tick-circle-icon"
+                  />
                   Functional Website
                 </li>
               </ul>
