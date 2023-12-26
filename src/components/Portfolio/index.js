@@ -11,7 +11,7 @@ const images = [
 
 export default function Portfolio() {
   return (
-    <div className="my-10 px-10">
+    <div className="my-[5rem] px-10">
       <div>
         <h3 className="inline-flex justify-center items-center bg-gradient-to-r from-[#00C4EE] to-[#3B4CE8] drop-shadow-md bg-clip-text text-transparent text-xl uppercase tracking-[1rem] font-semibold">
           Portfolio{" "}

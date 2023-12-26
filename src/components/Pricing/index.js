@@ -25,7 +25,7 @@ const pricing = [
 
 export default function Pricing() {
   return (
-    <div className="my-10 px-10">
+    <div className="my-[5rem] px-10">
       <div>
         <h3 className="inline-flex justify-center items-center bg-gradient-to-r from-[#00C4EE] to-[#3B4CE8] drop-shadow-md bg-clip-text text-transparent text-xl uppercase tracking-[1rem] font-semibold">
           Pricing{" "}
@@ -55,6 +55,7 @@ export default function Pricing() {
               className="rounded-2xl border border-solid border-white border-opacity-40 bg-gradient-to-b from-opacity-4 via-opacity-1 via-opacity-0 to-transparent shadow-lg backdrop-blur-20 lg:w-[420px] md:w-full h-[550px] p-5 flex flex-col gap-y-5 items-start justify-start"
               key={index}
             >
+              
               <div className="flex flex-col gap-y-4">
                 <h3 className="text-[#F5F5F5]/70 text-4xl font-extralight">
                   {price.package}
