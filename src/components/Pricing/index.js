@@ -52,7 +52,7 @@ export default function Pricing() {
         {pricing.map((price, index) => {
           return (
             <div
-              className="rounded-2xl border border-solid border-white border-opacity-40 bg-gradient-to-b from-opacity-4 via-opacity-1 via-opacity-0 to-transparent shadow-lg backdrop-blur-20 lg:w-[420px] md:w-full h-[550px] p-5 flex flex-col gap-y-5 items-start justify-start"
+              className="rounded-2xl border border-solid border-white border-opacity-40 bg-gradient-to-b from-opacity-4 via-opacity-1 via-opacity-0 to-transparent shadow-lg backdrop-blur-20 lg:w-[420px] md:w-full h-fit p-5 flex flex-col gap-y-5 items-start justify-start"
               key={index}
             >
               
