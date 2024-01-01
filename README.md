@@ -1,6 +1,6 @@
 # Zorin.Aethar Portfolio Project
 
-![Zorin.Aethar Logo](insert_logo_url_here)
+![Zorin.Aethar Logo](https://zorinaethar.netlify.app/_next/image?url=%2Fzorin_logo.png&w=256&q=75)
 
 ## About
 Welcome to the Zorin.Aethar Portfolio Project, a showcase of my skills as a designer and developer. This project serves as a demonstration of my ability to convert Figma designs into functional and visually appealing websites using Next.js & Tailwind.
