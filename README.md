@@ -24,7 +24,7 @@ To get started with this project, follow these steps:
 ## Contact
 If you have any questions or suggestions, feel free to reach out.
 
-- **Email:** [your.email@example.com](mailto:adefeyitimi@gmail.com)
+- **Email:** [timmyisadev@gmail.com](timmyisadev@gmail.com)
 
 ## License
 This project is licensed under the [MIT License](LICENSE).
