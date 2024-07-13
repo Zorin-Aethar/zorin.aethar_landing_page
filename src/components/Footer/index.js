@@ -1,10 +1,6 @@
 import Image from "next/image";
-import {
-  BsFacebook,
-  BsInstagram,
-  BsTwitterX,
-  BsLinkedin,
-} from "react-icons/bs";
+import Link from "next/link";
+import { BsFacebook, BsInstagram, BsTwitterX } from "react-icons/bs";
 
 export default function Footer() {
   return (
@@ -21,24 +17,31 @@ export default function Footer() {
         <h4 className="font-bold text-2xl">Let's Connect</h4>
         <ul className="font-thin text-[#fff]/60">
           <li>
-            4517 Washington Ave.
-            <br /> Manchester, Kentucky 39495
+            <a href="mailto:support@zorin.aethar.com" target="_blank">
+              support@zorin.aethar.com
+            </a>
           </li>
-          <li>support@zorin.aethar.com</li>
-          <li>(234) 555-0231</li>
+          <li>
+            <a href="tel:+2347059381812" target="_blank">
+              +2347059381812
+            </a>
+          </li>
         </ul>
       </div>
       <div>
         <h4 className="font-bold text-2xl">Links</h4>
         <ul className="font-thin text-[#fff]/60">
           <li>
-            <a href="">Pricing</a>
+            <a href="/faq">FAQ</a>
           </li>
           <li>
-            <a href="">Testimonials</a>
+            <a href="/#portfolio">Portfolio</a>
           </li>
           <li>
-            <a href="">Why Us</a>
+            <a href="/#meettheteam">Meet The Team</a>
+          </li>
+          <li>
+            <a href="/#testimonials">Testimonials</a>
           </li>
         </ul>
       </div>
@@ -46,24 +49,19 @@ export default function Footer() {
         <h4 className="font-bold text-2xl">Follow Us</h4>
         <ul className="flex gap-x-3">
           <li>
-            <a href="">
+            <Link href="https://www.facebook.com/zorinaethar/" target="_blank">
               <BsFacebook size={20} />
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="">
+            <Link href="https://www.instagram.com/zorin.aethar/">
               <BsInstagram size={20} />
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="">
+            <Link href="https://x.com/LordAethar">
               <BsTwitterX size={20} />
-            </a>
-          </li>
-          <li>
-            <a href="">
-              <BsLinkedin size={20} />
-            </a>
+            </Link>
           </li>
         </ul>
       </div>

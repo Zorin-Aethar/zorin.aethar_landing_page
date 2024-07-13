@@ -6,19 +6,21 @@ import Portfolio from "@/components/Portfolio";
 import Pricing from "@/components/Pricing";
 import Testimonials from "@/components/Testimonials";
 import Footer from "@/components/Footer";
+import ContactUs from "@/components/ContactUs";
 
 export default function Home() {
   return (
     <>
       <Head>
-        <title>Zorin.Aethar Web Design Agency</title>
+        <title>Zorin.Aethar Web Design & Development Agency</title>
       </Head>
       <Navbar />
       <Header />
       <Services />
       <Portfolio />
-      <Pricing />
+      {/* <Pricing /> */}
       <Testimonials />
+      <ContactUs />
       <Footer />
     </>
   );

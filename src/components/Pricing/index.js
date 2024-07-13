@@ -23,9 +23,20 @@ const pricing = [
   },
 ];
 
+function GetStarted() {
+  return (
+    <a
+      href=""
+      className="w-full inline-flex justify-center items-center gap-x-3 border hover:border-none border-[#00C4EE] py-4 rounded-md text-xl hover:bg-gradient-to-r from-[#00C4EE] to-[#3B4CE8] hover:duration-700"
+    >
+      Get Started <BsArrowUpRight />
+    </a>
+  );
+}
+
 export default function Pricing() {
   return (
-    <div className="my-[5rem] px-10">
+    <div className="my-[5rem] px-10" id="pricing">
       <div>
         <h3 className="inline-flex justify-center items-center bg-gradient-to-r from-[#00C4EE] to-[#3B4CE8] drop-shadow-md bg-clip-text text-transparent text-xl uppercase tracking-[1rem] font-semibold">
           Pricing{" "}
@@ -124,12 +135,7 @@ export default function Pricing() {
                   Functional Website
                 </li>
               </ul>
-              <a
-                href=""
-                className="w-full inline-flex justify-center items-center gap-x-3 border hover:border-none border-[#00C4EE] py-4 rounded-md text-xl hover:bg-gradient-to-r from-[#00C4EE] to-[#3B4CE8] duration-700"
-              >
-                Get Started <BsArrowUpRight />
-              </a>
+              <GetStarted />
             </div>
           );
         })}

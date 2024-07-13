@@ -3,35 +3,36 @@ import Image from "next/image";
 const data = [
   {
     imageUrl: "/icons/trophy.svg",
-    heading: "Expertise in Figma-to-Website",
-    text: "We have a proven track record and expertise in seamlessly turning Figma designs into functional Websites.",
+    heading: "Web Design Expertise",
+    text: "Our team excels in transforming Figma designs into visually stunning, highly functional websites that captivate users.",
   },
   {
     imageUrl: "/icons/magnify.svg",
     heading: "On-Page SEO Excellence",
-    text: "We have a proven track record and expertise in seamlessly turning Figma designs into functional Websites.",
+    text: "We optimize every aspect of your website to ensure it ranks highly in search engine results, driving more organic traffic.",
   },
   {
     imageUrl: "/icons/magic.svg",
     heading: "Interactive Magic",
-    text: "We have a proven track record and expertise in seamlessly turning Figma designs into functional Websites.",
+    text: "We create interactive elements that enhance user engagement and provide a seamless, enjoyable browsing experience.",
   },
   {
     imageUrl: "/icons/project.svg",
-    heading: "Dedicated Project manager",
-    text: "We have a proven track record and expertise in seamlessly turning Figma designs into functional Websites.",
+    heading: "Dedicated Project Manager",
+    text: "A dedicated project manager oversees your project from start to finish, ensuring all your requirements are met efficiently.",
   },
   {
     imageUrl: "/icons/test.svg",
     heading: "Comprehensive Testing",
-    text: "We have a proven track record and expertise in seamlessly turning Figma designs into functional Websites.",
+    text: "Our rigorous testing processes guarantee that your website is free from bugs and performs flawlessly across all devices.",
   },
   {
     imageUrl: "/icons/clock.svg",
     heading: "Timely Delivery",
-    text: "We have a proven track record and expertise in seamlessly turning Figma designs into functional Websites.",
+    text: "We adhere to strict timelines, ensuring your project is completed on schedule without compromising on quality.",
   },
 ];
+
 
 export default function Services() {
   return (

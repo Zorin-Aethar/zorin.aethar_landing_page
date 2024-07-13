@@ -1,20 +1,11 @@
 import Image from "next/image";
 
 function Clients() {
-  const brands = [
-    "/clients/adobe.png",
-    "/clients/amazon.png",
-    "/clients/asana.png",
-    "/clients/bigfish.png",
-    "/clients/google.png",
-    "/clients/logitech.png",
-    "/clients/uber.png",
-    "/clients/youtube.png",
-  ];
+  const brands = ["/clients/vefdefi_logo.svg", "/clients/logo.png"];
 
   return (
     <div className="flex flex-col items-center justify-center w-full sm:mt-8 md:mt-20 lg:mt-8 mt-16 gap-y-5">
-      <h3 className="font-semibold text-xl">Trusted By 30+ Businesses</h3>
+      <h3 className="font-semibold text-xl">Trusted By Businesses & Freelancers</h3>
       <div className="flex justify-center items-center overflow-clip gap-x-10">
         {brands.map((brand, index) => {
           return (
@@ -35,7 +26,7 @@ export default function Header() {
 
   return (
     <div className="w-full flex flex-col items-start gap-y-5 p-10">
-      <h1 className="sm:text-8xl md:text-6xl lg:text-8xl text-4xl relative font-semibold">
+      <h1 className="sm:text-8xl md:text-6xl lg:text-8xl text-4xl relative font-semibold leading-10">
         <span className="inline-flex justify-center items-center">
           We Develop{" "}
           <Image
@@ -63,31 +54,22 @@ export default function Header() {
       <div className="flex sm:flex-row flex-col sm:justify-center sm:items-center justify-start items-start gap-x-6 gap-y-4">
         <div>
           <a
-            href=""
+            href="#portfolio"
             className="inline-flex items-center justify-center border-[#00C4EE] border px-6 py-3 text-[#00C4EE] rounded-md ring-[#00C4EE]"
           >
             View Work{" "}
-            <Image src="/icons/arrow-up-right.svg" width={30} height={30} alt="arrow-up-right icon" />{" "}
+            <Image
+              src="/icons/arrow-up-right.svg"
+              width={30}
+              height={30}
+              alt="arrow-up-right icon"
+            />{" "}
           </a>
         </div>
         <div className="flex justify-center items-center gap-x-4 sm:ml-0 ml-3">
-          <div className="flex justify-center items-center">
-            {clients.map((client, index) => {
-              return (
-                <Image 
-                  src={client}
-                  width={50}
-                  height={50}
-                  key={index}
-                  alt={client}
-                  className="mx-[-0.7rem] rounded-full border-2 border-black"
-                />
-              );
-            })}
-          </div>
           <div className="font-semibold">
-            <p>1000+</p>
-            <p>Satisfied Clients</p>
+            <p>Highly Rated</p>
+            <p>by Our Clients</p>
           </div>
         </div>
       </div>

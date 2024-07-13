@@ -3,6 +3,7 @@ import Image from "next/image";
 import { MdOutlineMenu } from "react-icons/md";
 import { AiOutlineClose } from "react-icons/ai";
 import { motion, AnimatePresence } from "framer-motion";
+import { useRouter } from "next/router";
 
 function LetsTalk() {
   return (
@@ -34,16 +35,19 @@ function Dropdown({ setOpen }) {
       </div>
       <ul className="flex flex-col justify-center items-center gap-x-5 text-2xl gap-y-5">
         <li>
-          <a href="">FAQ</a>
+          <a href="/faq">FAQ</a>
         </li>
         <li>
-          <a href="">Case Studies</a>
+          <a href="/#portfolio">Portfolio</a>
         </li>
         <li>
-          <a href="">Why Us</a>
+          <a href="/#meettheteam">Meet The Team</a>
         </li>
+        {/* <li>
+          <a href="/#pricing">Pricing</a>
+        </li> */}
         <li>
-          <a href="">Testimonials</a>
+          <a href="/#testimonials">Testimonials</a>
         </li>
       </ul>
     </motion.div>
@@ -52,6 +56,7 @@ function Dropdown({ setOpen }) {
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
+  const { push } = useRouter();
 
   return (
     <>
@@ -61,19 +66,24 @@ export default function Navbar() {
           width={178}
           height={24}
           alt="Zorin.Aethar Logo"
+          className="hover:cursor-pointer"
+          onClick={() => push("/")}
         />
         <ul className="flex justify-center items-center gap-x-5 text-lg">
           <li>
-            <a href="">FAQ</a>
+            <a href="/faq">FAQ</a>
           </li>
           <li>
-            <a href="">Case Studies</a>
+            <a href="/#portfolio">Portfolio</a>
           </li>
           <li>
-            <a href="">Why Us</a>
+            <a href="/#meettheteam">Meet The Team</a>
           </li>
+          {/* <li>
+            <a href="/#pricing">Pricing</a>
+          </li> */}
           <li>
-            <a href="">Testimonials</a>
+            <a href="/#testimonials">Testimonials</a>
           </li>
         </ul>
         <LetsTalk />
@@ -93,6 +103,7 @@ export default function Navbar() {
             width={178}
             height={24}
             alt="Zorin.Aethar Logo"
+            onClick={() => push("/")}
           />
         </div>
         <LetsTalk />

@@ -4,17 +4,21 @@ import { useState } from "react";
 const data = [
   {
     testimony:
-      "I hired Zorin.Aethar to design and develop my e-commerce website, and I couldn’t be happier with the result. They were professional, creative, and responsive throughout the whole process. They listened to my needs and preferences, and delivered a website that exceeded my expectations, The Website is beautiful, user-friendly, and fast. It has increased my sales and conversions significantly. I highly recommend Zorin.Aethar to anyone looking for a reliable and talented digital partner.",
-    bio: "Founder,Athena",
-    name: "Sarah Conner",
-    avatarUrl: "/avatars/300-2.jpg",
+      "I hired Zorin.Aethar to design and develop VefDefi, and I couldn’t be happier with the result. They were professional, creative, and responsive throughout the whole process. They listened to my needs and preferences, and delivered a website that exceeded my expectations, The Website is beautiful, user-friendly, and fast. It has increased my sales and conversions significantly. I highly recommend Zorin.Aethar to anyone looking for a reliable and talented digital partner.",
+    bio: "Founder, VefDefi",
+    name: "James Emmanuel",
   },
   {
     testimony:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure voluptas quibusdam recusandae minus delectus suscipit quo corporis dolore veniam! Necessitatibus magnam vero ex omnis illo dolorum autem optio veniam voluptate.Rem similique eum ea veritatis itaque dicta deleniti veniam, excepturi et perferendis nisi eaque quis, doloribus minus ducimus, ipsa nulla impedit molestiae ipsum fugiat dolor aspernatur officia explicabo adipisci! Ex! Laboriosam, culpa laudantium? Dignissimos cupiditate, reiciendis magnam voluptate ipsam veritatis! Eius ratione veniam dolore sequi natus! Ullam earum distinctio tempore fugit aliquid minima assumenda in rerum omnis quo! Facilis, blanditiis?",
-    bio: "Leader,The Restistance",
-    name: "John Conner",
-    avatarUrl: "/avatars/300-1.jpg",
+      "I had the pleasure of working with Zorin.Aethar to design my portfolio site, and I couldn't be happier with the results. From the initial consultation to the final launch, the process was smooth, professional, and truly enjoyable. Zorin's creativity and expertise were evident in every detail, making my vision come to life in a way that exceeded my expectations.",
+    bio: "Freelancer",
+    name: "Winifred Liam",
+  },
+  {
+    testimony:
+      "Collaborating with Zorin.Aethar on the development of our dashboard was a truly outstanding experience. From start to finish, Zorin demonstrated exceptional technical expertise and a deep understanding of our needs. The result is a powerful, intuitive dashboard that has revolutionized the way our users engage with the platform.",
+    bio: "Founder, Audiobaze",
+    name: "Brian",
   },
 ];
 
@@ -46,13 +50,6 @@ export default function Testimonials() {
       >
         <p className="text-center text-lg">{data.testimony}</p>
         <div className="flex flex-col justify-center items-center">
-          <Image
-            src={data.avatarUrl}
-            width={75}
-            height={75}
-            className="rounded-full"
-            alt="avatar image"
-          />
           <p className="font-semibold text-2xl">{data.name}</p>
           <p className="font-light">{data.bio}</p>
         </div>
@@ -61,7 +58,7 @@ export default function Testimonials() {
   });
 
   return (
-    <div className="my-[5rem] px-10">
+    <div className="my-[5rem] px-10" id="testimonials">
       <div>
         <h3 className="inline-flex justify-center items-center bg-gradient-to-r from-[#00C4EE] to-[#3B4CE8] drop-shadow-md bg-clip-text text-transparent text-xl uppercase tracking-[1rem] font-semibold">
           Testimonials{" "}
