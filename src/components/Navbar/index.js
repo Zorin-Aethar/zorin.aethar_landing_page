@@ -29,6 +29,7 @@ function Dropdown({ setOpen }) {
       exit={{
         x: -1000,
       }}
+      id="top"
     >
       <div className="flex justify-end p-5">
         <AiOutlineClose color="#fff" size={40} onClick={() => setOpen(false)} />
@@ -60,7 +61,7 @@ export default function Navbar() {
 
   return (
     <>
-      <nav className="hidden justify-between items-center py-5 px-10 w-full border-b-[0.3px] border-[#FFF3F3] lg:flex">
+      <nav className="hidden justify-between items-center py-5 px-10 w-full border-b-[0.3px] border-[#FFF3F3] lg:flex" id="top">
         <Image
           src="/zorin_logo.png"
           width={178}
