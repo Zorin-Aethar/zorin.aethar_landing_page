@@ -5,7 +5,7 @@ function Clients() {
 
   return (
     <div className="flex flex-col items-center justify-center w-full sm:mt-8 md:mt-20 lg:mt-8 mt-16 gap-y-5">
-      <h3 className="font-semibold text-xl">Trusted By Businesses & Freelancers</h3>
+      <h3 className="font-semibold text-xl">Trusted By Businesses</h3>
       <div className="flex justify-center items-center overflow-clip gap-x-10">
         {brands.map((brand, index) => {
           return (
