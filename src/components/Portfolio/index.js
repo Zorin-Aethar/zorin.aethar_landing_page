@@ -32,6 +32,13 @@ const images = [
     projectUrl: "https://nbtc.netlify.app/",
   },
   {
+    url: "/projects/3swap.jpg",
+    title: "3Swap Aggregator",
+    description:
+      "3Swap platform provides a seamless and secure way to exchange your digital assets Embrace the future of finance with easy cryptocurrency swapping.",
+    projectUrl: "https://3swap-dexaggregator.netlify.app/exchange",
+  },
+  {
     url: "/projects/duckcoin.jpg",
     title: "Duck Coin",
     description:
@@ -51,13 +58,6 @@ const images = [
     description:
       "Create, edit and access your checklists, from anywhere around the world, With 0ver 3million users, MiData has gained a lot of credibility among organizations. Sign up to get started.",
     projectUrl: "https://midata.app/",
-  },
-  {
-    url: "/projects/3swap.jpg",
-    title: "3Swap Aggregator",
-    description:
-      "3Swap platform provides a seamless and secure way to exchange your digital assets Embrace the future of finance with easy cryptocurrency swapping.",
-    projectUrl: "https://3swap-dexaggregator.netlify.app/",
   },
   {
     url: "/projects/winifred.jpg",
