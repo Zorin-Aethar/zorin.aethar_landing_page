@@ -14,7 +14,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Zorin.Aethar Web Design & Development Agency</title>
+        <title>Zorin.Aethar | Web3 Design & Development Agency</title>
       </Head>
       <Navbar />
       <Header />

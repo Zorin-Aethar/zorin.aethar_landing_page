@@ -24,9 +24,17 @@ export default function ContactUs() {
           <p className="sm:text-[1.3rem] text-[1rem] font-normal">
             We always look forward to bringing your project ideas to life.
           </p>
+          <p>
+            <a
+              href="mailto: support@zorinaethar.xyz"
+              className="text-[#00C4EE] text-3xl"
+            >
+              support@zorinaethar.xyz
+            </a>
+          </p>
         </div>
       </div>
-      <ContactForm />
+      {/* <ContactForm /> */}
     </div>
   );
 }

@@ -17,8 +17,8 @@ export default function Footer() {
         <h4 className="font-bold text-2xl">Let's Connect</h4>
         <ul className="font-thin text-[#fff]/60">
           <li>
-            <a href="mailto:timmyisadev@gmail.com" target="_blank">
-              timmyisadev@gmail.com
+            <a href="mailto:support@zorinaethar.xyz" target="_blank">
+              support@zorinaethar.xyz
             </a>
           </li>
           <li>

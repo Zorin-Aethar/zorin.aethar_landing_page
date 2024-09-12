@@ -28,7 +28,7 @@ export default function Header() {
     <div className="w-full flex flex-col items-start gap-y-5 p-10">
       <h1 className="sm:text-8xl md:text-6xl lg:text-8xl text-4xl relative font-semibold leading-10">
         <span className="inline-flex justify-center items-center">
-          We Develop{" "}
+          Empower your business{" "}
           <Image
             src="/icons/diamond.png"
             width={65}
@@ -37,19 +37,18 @@ export default function Header() {
             className="sm:block hidden"
           />
         </span>{" "}
-        <br />
+        <br /> with cutting-edge{" "}
         <span className="bg-gradient-to-r from-[#00C4EE] to-[#3B4CE8] drop-shadow-md bg-clip-text text-transparent">
-          amazing
+          DApps
         </span>{" "}
-        Websites <br /> for your Business{""}
+        and blockchain solutions{""}
         <span className="bg-gradient-to-r from-[#00C4EE] to-[#3B4CE8] bg-clip-text text-transparent">
           .
         </span>
       </h1>
-      <p className="sm:w-5/6 w-full">
-        Discover our seamless workflow as we convert Figma Designs into stunning
-        Websites, <br /> Explore the synergy between design and development for
-        a pixel-perfect online experience.
+      <p className="sm:w-3/4 lg:w-3/6 w-full">
+        Discover the future of Web3, where design and development merge to
+        deliver secure, scalable, and innovative blockchain experiences.
       </p>
       <div className="flex sm:flex-row flex-col sm:justify-center sm:items-center justify-start items-start gap-x-6 gap-y-4">
         <div>

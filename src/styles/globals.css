@@ -20,3 +20,7 @@ body {
   color: rgb(var(--foreground-rgb));
   background-color: #161717;
 }
+
+.debug {
+  border: 1px solid red;
+}

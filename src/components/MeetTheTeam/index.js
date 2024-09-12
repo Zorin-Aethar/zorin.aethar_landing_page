@@ -56,7 +56,7 @@ export default function MeetTheTeam() {
           </p>
         </div>
       </div>
-      <div className="flex justify-center flex-wrap gap-3">
+      <div className="flex justify-start flex-wrap gap-3">
         {team.map((member, index) => {
           return (
             <div
