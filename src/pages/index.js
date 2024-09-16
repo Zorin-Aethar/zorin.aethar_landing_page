@@ -15,6 +15,9 @@ export default function Home() {
     <>
       <Head>
         <title>Zorin.Aethar | Web3 Design & Development Agency</title>
+        <meta name="description" content="Zorin.Aethar is a leading Web3 design and development agency specializing in innovative solutions for businesses. We offer services in web design, development, portfolio creation, and team collaboration to help you succeed in the digital landscape." />
+        <meta name="keywords" content="Web3, design agency, development agency, web design, web development, portfolio, testimonials, team collaboration, digital solutions, innovative design, user experience, blockchain technology, responsive design" />
+        <meta name="robots" content="index, follow" />
       </Head>
       <Navbar />
       <Header />

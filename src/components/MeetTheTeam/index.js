@@ -16,13 +16,22 @@ const team = [
     },
   },
   {
-    fullName: "Adefeyitimi Gbolahan Adeyeloja",
+    fullName: "Timmy G, Adeyeloja",
     img: "/team/me.jpg",
     role: "Founder, Full Stack Developer and Tech Instructor",
     socials: {
       twitter: "https://x.com/LordAethar",
       github: "https://github.com/TimmyIsANerd",
       linkedIn: "https://www.linkedin.com/in/adefeyitimi/",
+    },
+  },
+  {
+    fullName: "Mfoniso Ibokette",
+    img: "/team/mfoniso.jpg",
+    role: "Ambassador @Cowrywise, Web3 Product & Graphic Designer",
+    socials: {
+      twitter: "https://x.com/mfonisoibokette",
+      linkedIn: "https://www.linkedin.com/in/mfonisoibokette/",
     },
   },
 ];
@@ -59,15 +68,12 @@ export default function MeetTheTeam() {
       <div className="flex justify-start flex-wrap gap-3">
         {team.map((member, index) => {
           return (
-            <div
-              key={index}
-              className="border rounded-3xl h-fit  max-w-[250px]"
-            >
+            <div key={index} className="border rounded-3xl h-fit max-w-[250px]">
               <Image
                 src={member.img}
                 height={250}
                 width={200}
-                className="object-contain w-full rounded-t-3xl"
+                className="object-contain w-full h-full rounded-t-3xl"
                 alt={member.name}
               />
               <div>
@@ -76,27 +82,33 @@ export default function MeetTheTeam() {
                 </p>
                 <p className="text-center">{member.role}</p>
                 <div className="flex justify-center w-full p-1 gap-x-3">
-                  <Link href={member.socials.twitter}>
-                    <FaTwitter
-                      size={25}
-                      color="#3B4CE8"
-                      className="hover:cursor-pointer hover:scale-105 duration-700"
-                    />
-                  </Link>
-                  <Link href={member.socials.twitter}>
-                    <FaLinkedin
-                      size={25}
-                      color="#3B4CE8"
-                      className="hover:cursor-pointer hover:scale-105 duration-700"
-                    />
-                  </Link>
-                  <Link href={member.socials.github}>
-                    <FaGithub
-                      size={25}
-                      color="#3B4CE8"
-                      className="hover:cursor-pointer hover:scale-105 duration-700"
-                    />
-                  </Link>
+                  {member.socials.twitter && (
+                    <Link href={member.socials.twitter}>
+                      <FaTwitter
+                        size={25}
+                        color="#3B4CE8"
+                        className="hover:cursor-pointer hover:scale-105 duration-700"
+                      />
+                    </Link>
+                  )}
+                  {member.socials.linkedIn && (
+                    <Link href={member.socials.linkedIn}>
+                      <FaLinkedin
+                        size={25}
+                        color="#3B4CE8"
+                        className="hover:cursor-pointer hover:scale-105 duration-700"
+                      />
+                    </Link>
+                  )}
+                  {member.socials.github && (
+                    <Link href={member.socials.github}>
+                      <FaGithub
+                        size={25}
+                        color="#3B4CE8"
+                        className="hover:cursor-pointer hover:scale-105 duration-700"
+                      />
+                    </Link>
+                  )}
                 </div>
               </div>
             </div>
