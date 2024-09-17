@@ -3,6 +3,7 @@ import Link from "next/link";
 import { FaLinkedin } from "react-icons/fa6";
 import { FaGithub } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
+import { FaBehance } from "react-icons/fa6";
 
 const team = [
   {
@@ -28,10 +29,18 @@ const team = [
   {
     fullName: "Mfoniso Ibokette",
     img: "/team/mfoniso.jpg",
-    role: "Ambassador @Cowrywise, Web3 Product & Graphic Designer",
+    role: "Ambassador @Cowrywise & Web3 Product Designer",
     socials: {
       twitter: "https://x.com/mfonisoibokette",
       linkedIn: "https://www.linkedin.com/in/mfonisoibokette/",
+    },
+  },
+  {
+    fullName: "Alonge God'slove",
+    img: "/team/alonge.png",
+    role: "Creative Designer, Canva Expert & Web3 Designer",
+    socials: {
+      behance: "https://www.behance.net/alongegodslove",
     },
   },
 ];
@@ -76,7 +85,7 @@ export default function MeetTheTeam() {
                 className="object-contain w-full h-full rounded-t-3xl"
                 alt={member.name}
               />
-              <div>
+              <div className="p-2">
                 <p className="text-center font-semibold animate-pulse bg-gradient-to-r from-[#00C4EE] to-[#3B4CE8] drop-shadow-md bg-clip-text text-transparent">
                   {member.fullName}
                 </p>
@@ -94,6 +103,15 @@ export default function MeetTheTeam() {
                   {member.socials.linkedIn && (
                     <Link href={member.socials.linkedIn}>
                       <FaLinkedin
+                        size={25}
+                        color="#3B4CE8"
+                        className="hover:cursor-pointer hover:scale-105 duration-700"
+                      />
+                    </Link>
+                  )}
+                  {member.socials.behance && (
+                    <Link href={member.socials.behance}>
+                      <FaBehance
                         size={25}
                         color="#3B4CE8"
                         className="hover:cursor-pointer hover:scale-105 duration-700"
