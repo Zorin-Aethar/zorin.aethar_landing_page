@@ -92,7 +92,7 @@ export default function MeetTheTeam() {
                 <p className="text-center">{member.role}</p>
                 <div className="flex justify-center w-full p-1 gap-x-3">
                   {member.socials.twitter && (
-                    <Link href={member.socials.twitter}>
+                    <Link href={member.socials.twitter} target="_blank">
                       <FaTwitter
                         size={25}
                         color="#3B4CE8"
@@ -101,7 +101,7 @@ export default function MeetTheTeam() {
                     </Link>
                   )}
                   {member.socials.linkedIn && (
-                    <Link href={member.socials.linkedIn}>
+                    <Link href={member.socials.linkedIn} target="_blank">
                       <FaLinkedin
                         size={25}
                         color="#3B4CE8"
@@ -110,7 +110,7 @@ export default function MeetTheTeam() {
                     </Link>
                   )}
                   {member.socials.behance && (
-                    <Link href={member.socials.behance}>
+                    <Link href={member.socials.behance} target="_blank">
                       <FaBehance
                         size={25}
                         color="#3B4CE8"
@@ -119,7 +119,7 @@ export default function MeetTheTeam() {
                     </Link>
                   )}
                   {member.socials.github && (
-                    <Link href={member.socials.github}>
+                    <Link href={member.socials.github} target="_blank">
                       <FaGithub
                         size={25}
                         color="#3B4CE8"
