@@ -74,10 +74,10 @@ export default function MeetTheTeam() {
           </p>
         </div>
       </div>
-      <div className="flex justify-start flex-wrap gap-3">
+      <div className="flex flex-wrap justify-center md:justify-start gap-3">
         {team.map((member, index) => {
           return (
-            <div key={index} className="border rounded-3xl h-fit max-w-[250px]">
+            <div key={index} className="border rounded-3xl h-fit w-full md:max-w-[250px]">
               <Image
                 src={member.img}
                 height={250}

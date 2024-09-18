@@ -95,7 +95,7 @@ export default function Portfolio() {
             witness the impact we bring to every project
           </p>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-10 w-full mt-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 w-full mt-10">
           {images.map((project, index) => {
             return (
               <Link
